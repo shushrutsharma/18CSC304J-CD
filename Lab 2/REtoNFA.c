@@ -9,7 +9,7 @@ static int sc=0;
 void nfa(int st,int p,char *s)
 {    int i,sp,fs[15],fsc=0;
 	sp=st;pos=p;sc=st;
-	while(*s!=NULL)
+	while(*s != NULL)
 	{if(isalpha(*s))
 	    {ret[pos++]=sp;
 		ret[pos++]=*s;
@@ -23,7 +23,7 @@ void nfa(int st,int p,char *s)
 	if(*s=='|')
 		{sp=st;
 		 fs[fsc++]=sc;}
-	if(s=='')
+	if(*s=='*')
 		{ret[pos++]=sc;
 		 ret[pos++]=238;
 		 ret[pos++]=sp;
@@ -61,7 +61,7 @@ void nfa(int st,int p,char *s)
 void main()
 {    int i;
 	char *inp;
-	printf("enter the regular expression :");
+	printf("enter the regular expression : ");
 	gets(inp);
 	nfa(1,0,inp);
 	printf("\nstate  input  state\n");
