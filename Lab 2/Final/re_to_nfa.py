@@ -1,6 +1,7 @@
 transition_table = [ [0]*3 for _ in range(20) ]
 
 re = input("Enter the regular expression : ")
+re += " "
 
 i = 0
 j = 1
