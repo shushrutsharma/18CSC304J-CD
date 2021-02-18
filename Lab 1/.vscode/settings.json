@@ -2,5 +2,6 @@
     "files.associations": {
         "*.rmd": "markdown",
         "iostream": "cpp"
-    }
+    },
+    "python.pythonPath": "E:\\Code\\Python\\python.exe"
 }

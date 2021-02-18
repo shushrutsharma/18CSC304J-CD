@@ -1,4 +1,4 @@
-file  = open("add.c", 'r')
+file  = open("./add.c", 'r')
 lines = file.readlines()
 
 keywords    = ["void", "main", "int", "float", "bool", "if", "for", "else", "while", "char", "return"]
