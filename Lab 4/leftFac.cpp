@@ -19,7 +19,7 @@ int main()
         cout<<"\nRight of production "<<i+1<<": ";
         cin>>prodright[i];
     }
-    int j;
+    int j;  
     int e=1;
     for(i=0;i<p;++i) {
         for(j=i+1;j<p;++j) {

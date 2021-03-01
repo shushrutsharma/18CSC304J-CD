@@ -17,7 +17,7 @@ int main()
         cin>>nonter[i];
     }
     vector<vector<string> > prod;
-    cout<<"\nEnter '^' for null";
+    cout<<"\nEnter 'esp' for null";
     for(i=0;i<n;++i) {
         cout<<"\nNumber of "<<nonter[i]<<" productions: ";
         int k;
@@ -55,7 +55,7 @@ int main()
                 prod[i][j]+=nonter[i]+"'";
             }
         }
-        temp.push_back("^");
+        temp.push_back("esp");
         prod.push_back(temp);
     }
     cout<<"\n\n";
