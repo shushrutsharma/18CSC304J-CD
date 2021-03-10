@@ -110,7 +110,7 @@ void findfollow()
 {
 int i,j,k,n,e,n1;
 n = findpos(prod[0][0]);
-add(follow[n],'#');
+add(follow[n],'$');
 for(i=0;i<count;i++)
 {
 for(j=0;j<count;j++)
