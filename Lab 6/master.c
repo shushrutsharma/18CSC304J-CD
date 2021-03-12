@@ -5,7 +5,7 @@ void main()
 {
 char fin[10][20],st[10][20],ft[20][20],fol[20][20];
 int a=0,e,i,t,b,c,n,k,l=0,j,s,m,p;
-clrscr();
+
 printf("enter the no. of nonterminals\n");
 scanf("%d",&n);
 printf("enter the productions in a grammar\n");
@@ -101,7 +101,7 @@ goto q3;
 }
 fol[i][l]=st[k][j];
 l++;
-q3:
+q3:;
 }
 else
 {
@@ -216,5 +216,5 @@ if(st[i][j]=='|')
 j++;
 }
 }
-getch();
+
 }
