@@ -1,14 +1,14 @@
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-void main()
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
 {
     char fin[10][20],st[10][20],ft[20][20],fol[20][20];
     int a=0,e,i,t,b,c,n,k,l=0,j,s,m,p;
 
-    printf("enter the no. of nonterminals\n");
+    cout << ("enter the no. of nonterminals\n");
     scanf("%d",&n);
-    printf("enter the productions in a grammar\n");
+    cout << ("enter the productions in a grammar\n");
     for(i=0;i<n;i++)
         scanf("%s",st[i]);
     for(i=0;i<n;i++)
@@ -66,9 +66,9 @@ void main()
             ft[i][l]='\0';
         }
     }
-    printf("first \n");
+    cout << ("first \n");
     for(i=0;i<n;i++)
-        printf("FIRS[%c]=%s\n",st[i][0],ft[i]);
+        cout << ("FIRS[%c]=%s\n",st[i][0],ft[i]);
     fol[0][0]='$';
     for(i=0;i<n;i++)
     {
@@ -159,10 +159,10 @@ void main()
         }
         fol[i][l]='\0';
     }
-    printf("follow \n");
+    cout << ("follow \n");
     for(i=0;i<n;i++)
-        printf("FOLLOW[%c]=%s\n",st[i][0],fol[i]);
-    printf("\n");
+        cout << ("FOLLOW[%c]=%s\n",st[i][0],fol[i]);
+    cout << ("\n");
     s=0;
     for(i=0;i<n;i++)
     {
@@ -192,12 +192,12 @@ void main()
                     }
                     while(fol[a][b]!='\0')
                     {
-                        printf("M[%c,%c]=%s\n",st[i][0],fol[a][b],fin[s]);
+                        cout << ("M[%c,%c]=%s\n",st[i][0],fol[a][b],fin[s]);
                         b++;
                     }
                 }
                 else if(!((st[i][t]>64)&&(st[i][t]<91)))
-                    printf("M[%c,%c]=%s\n",st[i][0],st[i][t],fin[s]);
+                    cout << ("M[%c,%c]=%s\n",st[i][0],st[i][t],fin[s]);
                 else
                 {
                     b=0;
@@ -208,7 +208,7 @@ void main()
                     }
                     while(ft[a][b]!='\0')
                     {
-                        printf("M[%c,%c]=%s\n",st[i][0],ft[a][b],fin[s]);
+                        cout << ("M[%c,%c]=%s\n",st[i][0],ft[a][b],fin[s]);
                         b++;
                     }
                 }
