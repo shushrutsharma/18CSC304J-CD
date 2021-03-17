@@ -1,24 +1,11 @@
-// Including Libraries 
 #include <bits/stdc++.h> 
 using namespace std; 
-	
-// Global Variables 
 int z = 0, i = 0, j = 0, c = 0; 
-	
-// Modify array size to increase 
-// length of string to be parsed 
 char a[16], ac[20], stk[15], act[10]; 
-	
-// This Function will check whether 
-// the stack contain a production rule 
-// which is to be Reduce. 
-// Rules can be E->2E2 , E->3E3 , E->4 
 void check() 
 { 
-	// Coping string to be printed as action 
 	strcpy(ac,"REDUCE TO E -> "); 
-		
-	// c=length of input string 
+
 	for(z = 0; z < c; z++) 
 	{ 
 		// checking for producing rule E->4 

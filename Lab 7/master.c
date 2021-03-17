@@ -1,5 +1,6 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
 struct prodn
 {
 	char p1[10];
