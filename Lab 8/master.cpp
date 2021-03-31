@@ -14,7 +14,7 @@ struct grammar
 }gram[50];
 void get()
 {
-	cout<<"\n------------- LEADING AND TRAILING ---------------\n";
+	cout<<"\nLEADING AND TRAILING\n";
 	cout<<"\nEnter the no. of variables : ";
 	cin>>vars;
 	cout<<"\nEnter the variables : \n";
@@ -28,7 +28,7 @@ void get()
 	cout<<"\nEnter the terminals : ";
 	for(j=0;j<terms;j++)
 		cin>>term[j];
-	cout<<"\n------------- PRODUCTION DETAILS -----------------\n";
+	cout<<"\nPRODUCTION DETAILS\n";
 	for(i=0;i<vars;i++)
 	{
 		cout<<"\nEnter the no. of production of "<<gram[i].lhs<<":";
