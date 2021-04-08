@@ -7,6 +7,7 @@ using namespace std;
 char prod[20][20],listofvar[26]="ABCDEFGHIJKLMNOPQR";
 int novar=1,i=0,j=0,k=0,n=0,m=0,arr[30];
 int noitem=0;
+
 struct Grammar
 {
 	char lhs;
@@ -167,96 +168,3 @@ int main()
 	}
 
 }
-
-
-ENTER THE PRODUCTIONS OF THE GRAMMAR(0 TO END) :
-E->E+T
-E->T
-T->T*F
-T->F
-F->(E)
-F->i
-0
-
-
- augumented grammar   
-
-A->E 
-E->E+T 
-E->T 
-T->T*F 
-T->F 
-F->(E) 
-F->i 
- THE SET OF ITEMS ARE 
-
-
- I0
-
-A->.E
-E->.E+T
-E->.T
-T->.T*F
-T->.F
-F->.(E)
-F->.i
-
- I1
-
-A->E.
-E->E.+T
-
- I2
-
-E->T.
-T->T.*F
-
- I3
-
-T->F.
-
- I4
-
-F->(.E)
-E->.E+T
-E->.T
-T->.T*F
-T->.F
-F->.(E)
-F->.i
-
- I5
-
-F->i.
-
- I6
-
-E->E+.T
-T->.T*F
-T->.F
-F->.(E)
-F->.i
-
- I7
-
-T->T*.F
-F->.(E)
-F->.i
-
- I8
-
-F->(E.)
-E->E.+T
-
- I9
-
-E->E+T.
-T->T.*F
-
- I10
-
-T->T*F.
-
- I11
-
-F->(E).
