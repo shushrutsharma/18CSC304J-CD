@@ -1,7 +1,6 @@
 OPERATORS = set(['+', '-', '*', '/', '(', ')'])
 PRI = {'+':1, '-':1, '*':2, '/':2}
 
-### INFIX ===> POSTFIX ###
 def infix_to_postfix(formula):
     stack = [] # only pop when the coming op has priority 
     output = ''
