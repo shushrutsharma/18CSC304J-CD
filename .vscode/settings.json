@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "E:\\Code\\Python\\python.exe",
+    "python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
     "files.associations": {
         "*.rmd": "markdown",
         "iostream": "cpp"
